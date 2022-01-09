@@ -6,6 +6,9 @@ import { ViewUserComponent } from './view-user/view-user.component';
 import { DeleteUserComponent } from './delete-user/delete-user.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 
+import {MatListModule} from '@angular/material/list';
+
+
 
 
 @NgModule({
@@ -14,10 +17,12 @@ import { EditUserComponent } from './edit-user/edit-user.component';
     AddUserComponent,
     ViewUserComponent,
     DeleteUserComponent,
-    EditUserComponent
+    EditUserComponent,
+    
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatListModule
   ]
 })
 export class UsersModule { }
