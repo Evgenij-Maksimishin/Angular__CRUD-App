@@ -1,5 +1,11 @@
+<h1>Displaing {{listUsers.length}} users</h1>
+
 <mat-list role="list">
     <mat-list-item role="listitem" *ngFor="let user of listUsers">
-        {{user.name}} | <a routerLink="['edit', user.id]">Edit</a>
+        <span class="user-name">{{user.name}}</span>
+        |
+        <a class="action-link" [routerLink]="['edit', user.id]">Edit</a>
+        |
+        <a class="action-link" [routerLink]="['delete', user.id]">Delete</a>
     </mat-list-item>
 </mat-list>
