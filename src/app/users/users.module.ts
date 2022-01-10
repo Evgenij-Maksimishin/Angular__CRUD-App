@@ -7,6 +7,7 @@ import { DeleteUserComponent } from './delete-user/delete-user.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 
 import {MatListModule} from '@angular/material/list';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -22,7 +23,8 @@ import {MatListModule} from '@angular/material/list';
   ],
   imports: [
     CommonModule,
-    MatListModule
+    MatListModule,
+    RouterModule
   ]
 })
 export class UsersModule { }

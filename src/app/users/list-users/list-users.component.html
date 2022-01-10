@@ -1,5 +1,5 @@
 <mat-list role="list">
     <mat-list-item role="listitem" *ngFor="let user of listUsers">
-        {{user.name}}
+        {{user.name}} | <a routerLink="['edit', user.id]">Edit</a>
     </mat-list-item>
 </mat-list>
