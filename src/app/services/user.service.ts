@@ -10,8 +10,12 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  listUsers () {
+  listUsers() {
     return this.http.get(this.baseUrl + 'users');
+  }
+
+  viewUsers(id: string) {
+    return this.http.get(this.baseUrl + 'users/' + id);
   }
 
 }
