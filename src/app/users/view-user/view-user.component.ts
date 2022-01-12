@@ -10,6 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 export class ViewUserComponent implements OnInit {
 
   userId : string = '';
+  userDetails : any;
 
   constructor
     (
@@ -21,9 +22,14 @@ export class ViewUserComponent implements OnInit {
 
     this.activatedRoute.params.subscribe(data => {
       this.userId = data['id'];
+      console.log(this.userId);
+      
     })
 
-    this.userService.viewUsers(this.userId);
+    this.userService.viewUsers(this.userId).subscribe(data => {
+      this.userDetails = data;
+      
+    })
   }
 
 }

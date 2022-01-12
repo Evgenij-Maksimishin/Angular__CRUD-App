@@ -5,3 +5,8 @@
 .action-link {
   padding: 10px;
 }
+
+.list-item {
+  margin: 10px;
+  width: 97%;
+}
