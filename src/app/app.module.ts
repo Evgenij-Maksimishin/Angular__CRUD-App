@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -28,7 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     LayoutModule,
     UsersModule,
     HttpClientModule,
-    MatListModule
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
